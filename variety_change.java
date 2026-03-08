@@ -22,4 +22,8 @@ public class variety_change {
     public static void print2(double a){}
     //设计一个参数为byte类型的函数
     public static void print3(byte a){}
+    //表达式的最终结果由表达式的最高类型决定
+    public static double print4(int a,int b,byte c,double d){return a+b+c+d;}
+    //在表达式中，byte,short,char 会自动提升为int
+    public static int print5(byte a,short b,char c){return a+b+c;}
 }
